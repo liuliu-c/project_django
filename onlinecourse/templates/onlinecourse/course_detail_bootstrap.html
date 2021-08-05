@@ -77,7 +77,7 @@
             -->
 
 
-            <form id="questionform" action="point to a submit view" method="post">
+            <form id="questionform" action="{% url "onlinecourse:submit" course.pk%}" method="post">
                         
                         {% for question in course.question_set.all %}
                         <div class="card mt-1">
